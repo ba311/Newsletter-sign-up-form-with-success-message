@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+      
+  <div class="card">
+    <div class="card2">
+    </div>
+    <div class="card1">
+      <div class="card_tittle">
+        Stay updated!
+      </div>
+      <div class="card_text">
+        Join 60,000+ product managers receiving monthly updates on: 
+      </div>
+      <div class="card_list">
+        <p><img src="assets/images/icon-list.svg" alt="icon-list"> Product discovery and building what matters</p>
+        <p><img src="assets/images/icon-list.svg" alt="icon-list"> Measuring to ensure updates are a success</p>
+        <p><img src="assets/images/icon-list.svg" alt="icon-list"> And much more!</p>
+      </div>
+      <form class="form1">
+        <div class="card_form">
+          <div class="label">
+            <div>
+              <label>Email address</label> 
+            </div>
+            <div id="validationMessage">
+          </div> </div>
+          <input type="text" name="email" id="emailInput" placeholder="email@company.com" autocomplete="NO">
+        </div>
+        <input type="button" id="submit" onclick="validateEmail()" value="Subscribe to monthly newsletter">
+      </form>
+    </div>
+  </div> <div id="show"></div>
+
+  <!-- Sign-up form end -->
+  <div id="show2">
+    <!-- Success message start -->
+    <div class="card3">
+      <img src="assets/images/icon-list.svg" alt="icon-list" style="width: 50px; height: 50px; margin-bottom: 50px;">
+      <div class="card_tittle">
+        Thanks for subscribing!
+      </div>
+      <div class="card_text1">
+        A confirmation email has been sent to <b id="mail"></b>. 
+        Please open it and click the button inside to confirm your subscription.
+      </div>
+        <input type="button" id="dismiss-btn" onclick="dismissBtn()" value="Dismiss message"/>
+    </div>
+    <!-- Success message end -->
+  </div>
+
+
+  <footerx   class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lukman Abdulbaki</a>.
+  </footerx >
+  <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
